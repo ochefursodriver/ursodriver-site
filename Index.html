@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urso Driver - Transporte Executivo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1f1f1f;
+      color: #f8f8f8;
+    }
+
+    header {
+      background-color: #111;
+      padding: 16px 20px;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #f8f8f8;
+    }
+
+    /* Hamburger */
+    #menu-toggle {
+      display: none;
+    }
+
+    .menu-icon {
+      font-size: 28px;
+      color: #f8f8f8;
+      position: absolute;
+      right: 20px;
+      top: 16px;
+      cursor: pointer;
+      display: none;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    nav ul li a {
+      color: #f8f8f8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+      }
+
+      #menu-toggle:checked ~ nav ul {
+        display: flex;
+      }
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #e6b800;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      color: #e6b800;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-top: 30px;
+      text-decoration: none;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      filter: invert(1);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo">Urso Driver</span>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="Urso.jpg" alt="Urso Driver">
+    <h1>Transporte Executivo com Excelência</h1>
+    <p>Serviço personalizado, seguro e discreto em Curitiba e região. Uma experiência profissional sobre rodas com atendimento de confiança.</p>
+
+    <a class="whatsapp-button" href="https://wa.me/5541997432355?text=Olá%20Urso%20Driver,%20quero%20fazer%20uma%20reserva!" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+      Fale comigo no WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    © 2025 Urso Driver. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
