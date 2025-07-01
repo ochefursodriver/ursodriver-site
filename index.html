@@ -5,7 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Urso Driver - Transporte Particular</title>
   <style>
-    body {
+    body <!-- 🌐 MENÚ HAMBURGUESA RESPONSIVO -->
+<style>
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Container do menu */
+  .nav-bar {
+    background-color: #111;
+    padding: 12px 20px;
+    position: relative;
+  }
+
+  .nav-title {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .hamburger {
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      display: none;
+      background-color: #111;
+      padding: 20px;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+
+    .nav-title {
+      text-align: center;
+    }
+  }
+</style>
+
+<div class="nav-bar">
+  <span class="nav-title">Urso Driver</span>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="hamburger">☰</label>
+  
+  <div class="nav-links">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre mim</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </div>
+</div>{
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #1f1f1f;
